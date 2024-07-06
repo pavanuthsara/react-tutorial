@@ -1,7 +1,6 @@
-const name = "Pavan";
-
-function Hello(){
-    return <h1>Hello from, {name}</h1>
+function Hello(props){
+    console.log(props);
+    return <h1>Hello, {props.name}</h1>
 }
 
 export default Hello;
