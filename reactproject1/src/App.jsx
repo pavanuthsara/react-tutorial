@@ -3,8 +3,7 @@ import Hello from "./components/Hello"
 function App() {
   return (
     <div className="App">
-      <Hello name="Pavan" />
-      <Hello name="Kasuni" />
+      <Hello name="Pavan" message="Hi there " />
     </div>
   )
 }

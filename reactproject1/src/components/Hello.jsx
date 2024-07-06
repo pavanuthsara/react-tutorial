@@ -1,6 +1,5 @@
-function Hello(props){
-    console.log(props);
-    return <h1>Hello, {props.name}</h1>
+function Hello({name, message}){
+    return <h1>{message}, {name}</h1>
 }
 
 export default Hello;
