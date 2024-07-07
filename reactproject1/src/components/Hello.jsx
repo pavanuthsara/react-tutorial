@@ -1,5 +1,8 @@
-function Hello({name, message}){
-    return <h1>{message}, {name}</h1>
+function Hello({person}){
+    return <h1>{person.message}
+    {person.name}
+    {person.seatNumbers}</h1>
 }
 
 export default Hello;
+
