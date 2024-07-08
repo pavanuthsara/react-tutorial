@@ -1,16 +1,12 @@
-import Hello from "./components/Hello"
+import Hello from "./components/Hello";
+import Fruits from "./components/Fruits";
 
 function App() {
-  const person ={
-    name: "Pavan",
-    message: "Hi there ",
-    seatNumbers: [1,5,8],
-  };
   return (
     <div className="App">
-      <Hello person = {person} />
+      <Fruits />
     </div>
   )
 }
 
-export default App
+export default App;
