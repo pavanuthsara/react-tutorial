@@ -5,7 +5,7 @@ import ConditionalComponent from "./components/ConditionalComponent";
 function App() {
   return (
     <div className="App">
-      <ConditionalComponent />
+      <Fruits />
     </div>
   );
 }
