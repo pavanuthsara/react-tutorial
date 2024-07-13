@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 
 export default function Form() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState({ firstName: "", lastName: "" });
 
   return (
     <div>
+      {name.firstName} - {name.lastName}
       <form>
         <input
-          onChange={(e) => setName(e.target.value)} //another simple way  to implement a function , because this function only uses one time
+          onChange={(e) => setName({ ...name, firstName: e.target.value })} //another simple way  to implement a function , because this function only uses one time
           type="text"
-          value={name}
+          value={name.firstName}
+        />
+        <input
+          onChange={(e) => setName({ ...name, lastName: e.target.value })}
+          type="text"
+          value={name.lastName}
         />
       </form>
     </div>
